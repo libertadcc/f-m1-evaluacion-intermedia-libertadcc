@@ -8,16 +8,23 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
-    padding: 20px;
-    padding-bottom: 13px;
+    padding-top: 10px;
+    background: white;
+    height: 130px;
+    width: 100vw;
+    position: fixed;
+    margin: auto;
 }
 .logo {
     width: 155px;
+    padding: 10px;
 }
+
 .menu__list {
     list-style: none;
     display: flex;
     padding:0;
+    margin:0;
 }
 .menu__link {
     color:#4a4a4a;
@@ -40,5 +47,21 @@
 }
 
 @media all and (min-width: 768px) {
-
+    .header {
+        display:flex;
+        flex-direction: row;
+    }
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px 30px;
+    }
+    .main {
+        font-size: 40px;        
+    }    
+    .menu__list {
+        padding: 0;
+        position: absolute;
+        right: 0;
+    }
 }
